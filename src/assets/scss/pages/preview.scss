@@ -1,0 +1,232 @@
+// Core variables and mixin
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+
+.colwid
+{
+    float: left;
+}
+.head_count_heading
+{
+    color: #0B0C1F;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+.at_office_count
+{
+    color: #123796;
+    font-family: Avenir;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 55px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 10px;
+}
+.remote_count{
+    // color: #00B38B;
+    font-family: Avenir;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin: 0px;
+    line-height: 55px;
+    text-align: center;
+    padding:9%;
+
+
+}
+.at_office_text
+{
+    color: #0B0C1F;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.head_count_div
+{
+    background-color: #F8F8F8;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.22);
+    padding: 20px;
+    width: 100%;
+    float:left;
+}
+.hor_line
+{
+box-sizing: border-box;
+  height: 0.5px;
+  border: 0.5px solid #CFCFCF;
+}
+
+
+
+.people_count
+{ color: #0B0C1F;
+font-family: Avenir;
+font-size: 25px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 34px;
+}
+
+.hosted_div
+{
+    background-color: #F8F8F8;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.22);
+    padding: 20px;
+}
+.people_hosted_text
+{
+    font-size: 12px;
+}
+
+.mt-1, .my-1
+{
+    margin-top: 0rem !important;
+}
+.mb-0
+{
+    font-size: 12px;
+}
+.pt-2
+{
+    padding-top: 0.5rem !important;
+}
+.mt-2
+{
+    margin-top: 0rem !important;
+
+}
+
+.view_peers_but
+{
+    background-color: #123796 !important;
+}
+.people_active_class
+{
+
+}
+.headcount_sec_section
+{
+    width: 33%;
+    float: left;
+}
+
+.wfh_color
+{
+    color: #9958B5;
+    font-family: Avenir;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 44px;
+}
+.apexcharts-toolbar
+{
+    display:none !important;
+}
+.onfield_color
+{
+    color: #F9CA24;
+    font-family: Avenir;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 44px;
+}
+.head_bottom_div
+{
+    width: 100%;
+    float:left;
+    padding-top: 15%;
+}
+.leave_color
+{
+    color: #D77564;
+    font-family: Avenir;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 44px;
+}
+
+.inprogress_bg
+{
+    background-color: #FFD09D;
+}
+.stuck_bg
+{
+    background-color: #FFBCD3;
+} 
+
+.dropd1
+{
+    position: absolute;
+    right: 25%;
+    top:2%;
+    z-index: 1 !important;
+}
+.dropd2
+{
+    position: absolute;
+    right: 8%;
+    top:2%;
+    z-index: 1 !important;
+}
+.dropd3
+{
+    position: absolute;
+    right: 10%;
+    top:2%;
+    z-index: 1 !important;
+}
+dropd_huddle
+{
+    position: absolute;
+    right: 15%;
+    top:2%;
+    z-index: 1 !important;  
+}
+.karmapoints_title
+{
+    font-size: 16px !important;
+}
+.apexcharts-legend
+{
+    // position: absolute !important;
+     //top:20px !important;
+    bottom:0px !important;
+    // z-index: 1;
+    // left: auto !important;
+
+
+}
+// .card-body
+// {
+//     padding: 0rem 1rem;
+// }
+
+
+// .apexcharts-text
+// {
+//     font-size: 25px !important;
+// }
