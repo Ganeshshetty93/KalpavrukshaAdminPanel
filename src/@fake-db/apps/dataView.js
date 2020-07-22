@@ -948,7 +948,7 @@ mock.onPost("/api/datalist/add-data").reply(request => {
   dataList.unshift({
     ...data,
     id: highestId + 1,
-    popularity: determinePopularity(data.popularity.popValue)
+    // popularity: determinePopularity(data.popularity.popValue)
   })
   return [200]
 })
