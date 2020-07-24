@@ -75,27 +75,44 @@ class ManageProductSidebar extends Component {
     }
     this.addNew = false;
   }
-
+  handleFile(e) {
+    var reader = new FileReader();
+    console.log(e,e.target.length,"lo");
+    var file = e.target.files[0];
+    console.log(file);
+    // if( file!=undefined)
+    // {
+    //   // debugger;
+    //   this.setState({
+    //   img:true
+    //   })
+    // }
+    console.log(file, "dda");
+    this.setState({
+      img: file
+    });
+  }
   handleSubmit = obj => {
     console.log(obj);
     if (this.props.data !== null) {
       this.props.updateData(obj);
     } else {
       var data = new FormData()
-      data.set('name', obj.name);
-      data.set('unit', parseInt(obj.quantity));
-      data.set('price', parseInt(obj.price));
-      data.set('salePrice', parseInt(obj.Discountprice));
-      data.set('description', "hkjhkj");
-      data.set( 'discount' ,10,);
-      data.set( 'type', "test");
-      data.set('inStock', true);
-      data.set('stock', 10);
-      data.set('isActive', true);
-      data.set('isNew', true);
-      data.set('sale', true);
-      data.set('Weight', 10);
-      data.set('category', 1);
+      data.append('item[name]', obj.name);
+      data.append('item[unit]', parseInt(obj.quantity));
+      data.append('item[price]', parseInt(obj.price));
+      data.append('item[salePrice]', parseInt(obj.Discountprice));
+      data.append('item[description]', "hkjhkj");
+      data.append( 'item[discount]' ,10,);
+      data.append( 'item[type]', "test");
+      data.append('item[inStock]', true);
+      data.append('item[stock]', 10);
+      data.append('item[isActive]', true);
+      data.append('item[isNew]', true);
+      data.append('item[sale]', true);
+      data.append('item[Weight]', 10);
+      data.append('item[category]', 1);
+      data.append('files',obj.img)
       
       //  data = {
       //   name: obj.name,
@@ -258,9 +275,7 @@ class ManageProductSidebar extends Component {
                 type="file"
                 id="upload-image"
                 hidden
-                onChange={e =>
-                  this.setState({ img: URL.createObjectURL(e.target.files[0]) })
-                }
+                onChange={e => this.handleFile(e)}
               />
             </label>
           ) : null}
